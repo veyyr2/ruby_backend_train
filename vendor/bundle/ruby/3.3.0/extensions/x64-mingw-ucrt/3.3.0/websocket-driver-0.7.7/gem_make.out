@@ -1,0 +1,19 @@
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-h7dsy3 sitelibdir\=./.gem.20250509-5544-h7dsy3 clean
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-h7dsy3 sitelibdir\=./.gem.20250509-5544-h7dsy3
+generating websocket_mask-x64-mingw-ucrt.def
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-h7dsy3 sitelibdir\=./.gem.20250509-5544-h7dsy3 install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20250509-5544-h7dsy3
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-h7dsy3 sitelibdir\=./.gem.20250509-5544-h7dsy3 clean

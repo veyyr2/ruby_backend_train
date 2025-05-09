@@ -1,0 +1,18 @@
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-z43rhq sitelibdir\=./.gem.20250509-5544-z43rhq clean
+make: *** Нет правила для сборки цели «clean».  Останов.
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-z43rhq sitelibdir\=./.gem.20250509-5544-z43rhq
+make: Цель «all» не требует выполнения команд.
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-z43rhq sitelibdir\=./.gem.20250509-5544-z43rhq install
+make: Цель «install» не требует выполнения команд.
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-z43rhq sitelibdir\=./.gem.20250509-5544-z43rhq clean
+make: *** Нет правила для сборки цели «clean».  Останов.

@@ -1,0 +1,19 @@
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-bxnp0d sitelibdir\=./.gem.20250509-5544-bxnp0d clean
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-bxnp0d sitelibdir\=./.gem.20250509-5544-bxnp0d
+generating cruby-x64-mingw-ucrt.def
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-bxnp0d sitelibdir\=./.gem.20250509-5544-bxnp0d install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20250509-5544-bxnp0d/skiptrace/internal
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-bxnp0d sitelibdir\=./.gem.20250509-5544-bxnp0d clean

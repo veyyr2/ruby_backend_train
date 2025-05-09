@@ -1,0 +1,19 @@
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-6ff2qr sitelibdir\=./.gem.20250509-5544-6ff2qr clean
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-6ff2qr sitelibdir\=./.gem.20250509-5544-6ff2qr
+generating cparse-x64-mingw-ucrt.def
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-6ff2qr sitelibdir\=./.gem.20250509-5544-6ff2qr install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250509-5544-6ff2qr/racc
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-6ff2qr sitelibdir\=./.gem.20250509-5544-6ff2qr clean

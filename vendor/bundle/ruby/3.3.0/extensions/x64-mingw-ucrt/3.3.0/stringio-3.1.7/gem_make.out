@@ -1,0 +1,20 @@
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+checking for rb_io_mode_t in ruby/io.h... no
+creating Makefile
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-badqtw sitelibdir\=./.gem.20250509-5544-badqtw clean
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-badqtw sitelibdir\=./.gem.20250509-5544-badqtw
+generating stringio-x64-mingw-ucrt.def
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-badqtw sitelibdir\=./.gem.20250509-5544-badqtw install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20250509-5544-badqtw
+
+current directory: D:/WORK/ruby_training/ruby_backend_train/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250509-5544-badqtw sitelibdir\=./.gem.20250509-5544-badqtw clean
