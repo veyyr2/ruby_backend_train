@@ -11,4 +11,19 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+
+
+  # если пользователь отправил форму с запросом POST, то создаётся в экшене изменение данных в БД
+  # что в свою очередь в create отправляет на страницу create.html.erb
+  # post '/questions', to: 'questions#create'
+
+  # если пользователь изменил вопрос
+  # patch '/questions/:id', to: 'questions#update'
+
+  # если пользователь удалил вопрос
+  # delete '/questions/:id', to: 'questions#destroy'
+
+  # записать всё одной строкой с дополнением 
+  resources :questions
 end
