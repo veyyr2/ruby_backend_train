@@ -1,0 +1,4 @@
+<h1>Вопросы:</h1>
+<% @questions.each do |a| %>
+    <%= link_to "ID вопроса: #{a.id}", "/questions/#{a.id}" %> <br>
+<% end %>
