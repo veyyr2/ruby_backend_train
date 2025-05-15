@@ -1,0 +1,12 @@
+<h1>Редактирование вопроса <%= @question.id %>  </h1>
+<h1>Пользователя: <%= @question.user_id %> </h1>
+
+<%= form_with model: @question do |f| %>
+    <p> <%= f.label :body, 'Вопрос' %> </p>
+    <p> <%= f.text_area :body, rows: 5 %></p>
+
+    <p> <%= f.label :user_id, 'Кому:' %> </p>
+    <p> <%= f.text_field :user_id %> </p>
+
+    <p><%= f.submit 'Сохранить' %></p>
+<% end %>

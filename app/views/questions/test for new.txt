@@ -1,0 +1,11 @@
+<h1>Новый вопрос</h1>
+
+<form action="/questions" method="post">
+    <label for="question[body]">Вопрос:</label>
+    <p><textarea name="question[body]" rows="5"></textarea></p>
+
+    <label for="question[user_id]">Кому:</label>
+    <p><input type="number" name="question[user_id]"></p>
+
+    <input type="submit" value="Создать">
+</form>

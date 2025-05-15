@@ -2,3 +2,5 @@
 <% @questions.each do |a| %>
     <%= link_to "ID вопроса: #{a.id}", "/questions/#{a.id}" %> <br>
 <% end %>
+
+<p><%= link_to "Создать новый вопрос", "/questions/new" %></p>
