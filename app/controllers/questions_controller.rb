@@ -1,22 +1,21 @@
 class QuestionsController < ApplicationController    
+    # автоматизация
+    before_action :set_question, only: %i[update show destroy edit] # использовать функцию set_question и вставить в функции update, show, destroy, edit её кусочек кода
+
     def create
-        # создаём вопрос, передавая параметры через params
-        @question = Question.create body: params[:question][:body], user_id: params[:question][:user_id]
+        # создаём вопрос, с помощью функции в private под именем question_params
+        question = Question.create(question_params)
 
         # переместить пользователя на вопрос.
-        redirect_to (@question)
+        redirect_to (question)
     end
 
     # обновить вопрос от edit
     def update 
         # сначала находим
-        @question = Question.find(params[:id])
 
-        # обновляем
-        @question.update(
-            body: params[:question][:body],
-            user_id: params[:question][:user_id]
-        )
+        # обновляем с помощью функции в private под именем question_params 
+        @question.update(question_params)
 
         # перенаправляем
         redirect_to question_path(@question)
@@ -24,16 +23,17 @@ class QuestionsController < ApplicationController
 
     def destroy
         # сначала находим
-        @question = Question.find(params[:id])
 
         # удаляем
-        @question = Question.destroy
+        @question.destroy
+
+        # перенаправить на список вопросов
+        redirect_to questions_path
     end
 
     # показать один вопрос
     def show
         # сначала находим
-        @question = Question.find(params[:id])
     end 
 
     # список вопросов
@@ -48,6 +48,18 @@ class QuestionsController < ApplicationController
 
     # редактировать вопрос
     def edit 
-        @question = Question.find(params[:id]) 
+    end
+
+    # вспомогательные функции только для контроллера
+    private
+
+    # параметры для изменения
+    def question_params
+        params.require(:question).permit(:body, :user_id) # в permit указываем какие параметры мы можем изменить
+    end
+
+    # функция для автоматизации (найти вопрос)
+    def set_question
+        @question = Question.find(params[:id])
     end
 end
