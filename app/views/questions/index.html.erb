@@ -1,6 +1,8 @@
-<h1>Вопросы:</h1>
-<% @questions.each do |a| %>
-    <%= link_to "ID вопроса: #{a.id}", "/questions/#{a.id}" %> <br>
-<% end %>
+<div class="container">
+   <h1 class="title_lg mb">Вопросы:</h1>
+    <% @questions.each do |a| %>
+        <p class="mb-sm"> <%= link_to "ID вопроса: #{a.id}", "/questions/#{a.id}" %> </p>
+    <% end %>
 
-<p><%= link_to "Создать новый вопрос", "/questions/new" %></p>
+    <p class="mt"><%= link_to "Создать новый вопрос", "/questions/new", class: "button button-main" %></p>
+</div>

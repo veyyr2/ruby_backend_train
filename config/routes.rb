@@ -26,4 +26,7 @@ Rails.application.routes.draw do
 
   # записать всё одной строкой с дополнением 
   resources :questions
+
+  # сделать корневой путь
+  root to: 'questions#index'
 end

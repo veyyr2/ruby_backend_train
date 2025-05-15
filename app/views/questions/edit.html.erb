@@ -1,12 +1,14 @@
-<h1>Редактирование вопроса <%= @question.id %>  </h1>
-<h1>Пользователя: <%= @question.user_id %> </h1>
+<div class="container">
+    <h1 class="title_lg mb">Редактирование вопроса <%= @question.id %>  </h1>
+    <h1 class="title_md mb">ID Пользователя: <%= @question.user_id %> </h1>
 
-<%= form_with model: @question do |f| %>
-    <p> <%= f.label :body, 'Вопрос' %> </p>
-    <p> <%= f.text_area :body, rows: 5 %></p>
+    <%= form_with model: @question do |f| %>
+        <p> <%= f.label :body, 'Вопрос' %> </p>
+        <p> <%= f.text_area :body, rows: 5, class: "form-text-area" %></p>
 
-    <p> <%= f.label :user_id, 'Кому:' %> </p>
-    <p> <%= f.text_field :user_id %> </p>
+        <p class="mt"> <%= f.label :user_id, 'Кому:' %> </p>
+        <p> <%= f.text_field :user_id, class: "form-text-field" %> </p>
 
-    <p><%= f.submit 'Сохранить' %></p>
-<% end %>
+        <p class="mt"><%= f.submit 'Сохранить', class: "button button-main" %></p>
+    <% end %> 
+</div>
