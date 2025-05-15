@@ -1,0 +1,15 @@
+<!-- паршл для вывода информации вопроса. В index выводится все вопросы из-за @questions -->
+<div class="mb-sm">
+    <%= question.body %>
+</div>
+
+<div class="text-sm question-footer">
+    <div class="text-grey">
+        <%= l(question.created_at, format: :short) %>
+    </div>
+
+    <div>
+        <%= button_to 'Удалить вопрос', question_path(question), method: :delete, class: "mt button button-main" %>
+        <p class="mt"> <%= link_to 'Изменить вопрос', edit_question_path(question) %> </p>
+    </div>
+</div>

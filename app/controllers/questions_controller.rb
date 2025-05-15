@@ -22,8 +22,6 @@ class QuestionsController < ApplicationController
     end
 
     def destroy
-        # сначала находим
-
         # удаляем
         @question.destroy
 
@@ -33,7 +31,6 @@ class QuestionsController < ApplicationController
 
     # показать один вопрос
     def show
-        # сначала находим
     end 
 
     # список вопросов

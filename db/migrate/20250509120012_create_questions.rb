@@ -4,7 +4,7 @@ class CreateQuestions < ActiveRecord::Migration[8.0]
       t.text :body
       t.integer :user_id, index: true
 
-      t.timestamps
+      t.timestamps # updated_at и created_at
     end
   end
 end
