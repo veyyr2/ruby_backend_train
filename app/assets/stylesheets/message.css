@@ -1,0 +1,14 @@
+.message {
+    border: 1px solid #d0d0d0;
+    padding: 10px 15px;
+}
+
+.message-notice {
+    background-color: rgb(252, 238, 220);
+    border-color: black;
+}
+
+.message-alert {
+    background-color: pink;
+    border-color: red;
+}

@@ -23,6 +23,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="app-body">
+        <!-- Используем flash для уведомления пользователя -->
+        <% if flash[:notice].present? %>
+            <p class="mb mt message message-notice"> <%= flash[:notice] %> </p>
+        <% end %>
+        <%= yield %>
+    </div>
   </body>
 </html>

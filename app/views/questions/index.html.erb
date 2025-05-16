@@ -1,5 +1,18 @@
+<!-- это index.html.erb -->
 <div class="container">
-   <h1 class="title_lg mb">Все вопросы:</h1>
+    <!-- форма создания вопроса -->
+    <div>
+        <%= render 'form', variable: @question %>
+    </div>
+
+    <!-- показать кол-во всех вопросов с изменением окончанием слова на -а -ов (хелпер-функция inclination) -->
+   <h1 class="title_lg mb mt">
+        <!--Все вопросы:-->
+        
+        <p>
+            Всего: <%= @questions.count %> <%= inclination(@questions.count, 'вопрос', 'вопроса', 'вопросов') %>
+        </p>
+   </h1>
 
    <!-- вместо цикла вывода всех вопросов-->
     <% @questions.each do |abc| %>
@@ -8,6 +21,6 @@
         </div>  
     <% end %>
     
-
+    <!-- кнопка создать новый вопрос -->
     <p class="mt"><%= link_to "Создать новый вопрос", "/questions/new", class: "button button-main" %></p>
 </div>

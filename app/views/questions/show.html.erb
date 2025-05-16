@@ -1,6 +1,7 @@
 <div class="container">
     <h1 class="title_lg mb">Вопрос <%= @question.id %>: </h1>
     
+    <!-- Вызвать паршл _question -->
     <%= render @question %> 
     
     <p class="mt"> <%= link_to 'Все вопросы', "/questions" %> </p>

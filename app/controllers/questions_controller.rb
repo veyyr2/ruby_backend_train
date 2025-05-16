@@ -6,27 +6,25 @@ class QuestionsController < ApplicationController
         # создаём вопрос, с помощью функции в private под именем question_params
         question = Question.create(question_params)
 
-        # переместить пользователя на вопрос.
-        redirect_to (question)
+        # переместить пользователя на вопрос. В notice используется flash, чтобы уведомить пользователя.
+        redirect_to question_path(question), notice: 'Вы успешно создали вопрос!'
     end
 
     # обновить вопрос от edit
     def update 
-        # сначала находим
-
         # обновляем с помощью функции в private под именем question_params 
         @question.update(question_params)
 
-        # перенаправляем
-        redirect_to question_path(@question)
+        # перенаправляем. В notice используется flash, чтобы уведомить пользователя.
+        redirect_to question_path(@question), notice: 'Вы успешно обновили вопрос!'
     end
 
     def destroy
         # удаляем
         @question.destroy
 
-        # перенаправить на список вопросов
-        redirect_to questions_path
+        # перенаправить на список вопросов. В notice используется flash, чтобы уведомить пользователя.
+        redirect_to questions_path, notice: 'Вы удалили вопрос.'
     end
 
     # показать один вопрос
@@ -36,6 +34,7 @@ class QuestionsController < ApplicationController
     # список вопросов
     def index 
         @questions = Question.all
+        @question = Question.new
     end
 
     # создать вопрос в форме
