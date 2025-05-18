@@ -1,5 +1,6 @@
 <!-- new users -->
 <div class="container">
+    <!-- заголовок -->
     <h2 class="title">Присоединяйся и спрашивай!</h2>
 
     <div class="mt">
@@ -15,6 +16,10 @@
             <!-- почта -->
             <p class="mt"><%= f.label :email, 'Ваша почта:' %> </p>
             <p><%= f.text_field :email, class: 'form-text-field' %></p>
+            
+            <!-- пароль. Он не password_digest, т.к. в модели User есть has_secure_password и как раз он генерирует поле password -->
+            <p class="mt"><%= f.label :password, 'Ваш пароль:' %> </p>
+            <p><%= f.password_field :password, class: 'form-text-field' %></p>
 
             <p class="mt-lg"><%= f.submit 'Зарегистрироваться', class: 'button button-main' %></p>
         <% end %>

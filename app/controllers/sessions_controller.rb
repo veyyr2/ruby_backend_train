@@ -7,8 +7,8 @@ class SessionsController < ApplicationController
     # из формы new.html.erb запрашиваем session
     user_params = params.require(:session)
 
-    # находим юзера по почте
-    user = User.find_by(email: user_params[:email])
+    # находим юзера по почте. Через знак & присваиваем зависимость: "Если нашел юзера по почте, то можно аутентифицировать его по паролю. Если не нашел, то вывода ошибки rails не будет. "
+    user = User.find_by(email: user_params[:email])&.authenticate(user_params[:password])
 
     # проверка на nil, то есть на существование пользователя по email (индентификация)
     if user.present?
