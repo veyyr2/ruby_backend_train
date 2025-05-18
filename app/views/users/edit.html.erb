@@ -1,7 +1,7 @@
-<!-- new users -->
+<%# это edit users %>
+
 <div class="container">
-    <!-- заголовок -->
-    <h2 class="title">Присоединяйся и спрашивай!</h2>
+    <h2 class="title">Редактирование пользователя</h2>
 
     <!-- проверка на ошибку, если она хоть что-то содержит -->
     <% if @user.errors.any? %>
@@ -26,15 +26,26 @@
             <p class="mt"><%= f.label :email, 'Ваша почта:' %> </p>
             <p><%= f.text_field :email, class: 'form-text-field' %></p>
             
+            <p class="mt-lg text-sm"> Если не хочешь менять пароль, то оставь его пустым. </p>
             <!-- пароль. Он не password_digest, т.к. в модели User есть has_secure_password и как раз он генерирует поле в БД password -->
-            <p class="mt"><%= f.label :password, 'Ваш пароль:' %> </p>
+            <p class="mt"><%= f.label :password, 'Ваш новый пароль:' %> </p>
             <p><%= f.password_field :password, class: 'form-text-field' %></p>
 
             <!-- пароль. Он не password_digest, т.к. в модели User есть has_secure_password и как раз он генерирует поле в БД password -->
             <p class="mt"><%= f.label :password_confirmation, 'Повторите пароль:' %> </p>
             <p><%= f.password_field :password_confirmation, class: 'form-text-field' %></p>
 
-            <p class="mt-lg"><%= f.submit 'Зарегистрироваться', class: 'button button-main' %></p>
+            <p class="mt-lg">
+                <%= f.submit 'Сохранить', class: 'button button-main' %>
+                <span class="text-sm"> <%= link_to 'Вернуться', :back %> </span>
+            </p>
         <% end %>
+    </div>
+
+    <!-- кнопка удаления -->
+    <div class="mt-lg">
+        <%= button_to 'Удалить пользователя', user_path(@user), method: :delete,
+        form: {data: {turbo_confirm: 'Вы точно хотите удалить пользователя?'}},
+        class: 'text-red text-sm' %>
     </div>
 </div>

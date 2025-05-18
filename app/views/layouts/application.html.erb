@@ -30,7 +30,7 @@
         <!-- название сайта -->
         <p class="title-sm text-bold"> <%= link_to "Ask me!", root_path %> </p>
 
-        <div>         
+        <div> 
           <!-- Если пользователь залогинился -->
           <% if current_user.present? %>
             <!-- вывести имя пользователя -->
@@ -53,7 +53,7 @@
         <p class="mb mt message message-notice"> <%= flash[:notice] %> </p>
       <!-- если что-то пошло не так, то вывести alert -->
       <% elsif flash[:alert].present? %>
-        <p class="mb mt message message-alert"> <%= flash[:alert] %> </p>
+        <p class="mb message message-alert"> <%= flash[:alert] %> </p>
       <% end %>
 
       <%= yield %>

@@ -31,7 +31,7 @@ Rails.application.routes.draw do
   resource :session, only: %i[new create destroy]
 
   # провести путь только для экшенов new и create
-  resources :users, only: %i[new create]
+  resources :users, only: %i[new create edit update destroy]
 
   # сделать корневой путь
   root to: 'questions#index'
