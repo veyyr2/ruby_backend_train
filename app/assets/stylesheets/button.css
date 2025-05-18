@@ -12,3 +12,8 @@
 .button-main {
     background-color: rgb(194, 2, 2);
 }
+
+.button-yellow {
+    background: rgb(173, 173, 173);
+    color: #000;
+}

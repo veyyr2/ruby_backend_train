@@ -1,0 +1,18 @@
+<!-- new session -->
+<div class="container">
+    <h2 class="title">Вход</h2>
+
+    <p class="mt">Введите свои email и пароль для входа на сайт</p>
+
+    <div class="mt">
+        <%= form_with scope: :session, url: session_path, data: {turbo: false} do |f| %>
+            <p><%= f.label :email, 'Почта' %> </p>
+            <p><%= f.text_field :email, class: 'form-text-field' %></p>
+
+            <p class="mt"><%= f.label :password, 'Пароль' %> </p>
+            <p><%= f.password_field :password, class: 'form-text-field' %></p>
+
+            <p class="mt-lg"><%= f.submit 'Войти', class: 'button button-main' %></p>
+        <% end %>
+    </div>
+</div>

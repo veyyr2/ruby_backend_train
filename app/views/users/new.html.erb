@@ -1,0 +1,22 @@
+<!-- new users -->
+<div class="container">
+    <h2 class="title">Присоединяйся и спрашивай!</h2>
+
+    <div class="mt">
+        <%= form_with model: @user do |f| %>
+            <!-- имя пользователя -->
+            <p><%= f.label :name, 'Ваше имя:' %> </p>
+            <p><%= f.text_field :name, class: 'form-text-field' %></p>
+
+            <!-- никнейм -->
+            <p class="mt"><%= f.label :nickname, 'Ваш nickname:' %> </p>
+            <p><%= f.text_field :nickname, class: 'form-text-field' %></p>
+
+            <!-- почта -->
+            <p class="mt"><%= f.label :email, 'Ваша почта:' %> </p>
+            <p><%= f.text_field :email, class: 'form-text-field' %></p>
+
+            <p class="mt-lg"><%= f.submit 'Зарегистрироваться', class: 'button button-main' %></p>
+        <% end %>
+    </div>
+</div>

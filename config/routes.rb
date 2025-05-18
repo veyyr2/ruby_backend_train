@@ -27,6 +27,12 @@ Rails.application.routes.draw do
   # записать всё одной строкой с дополнением 
   resources :questions
 
+  # сессия в единственном числе, т.к. пользователю доступна только своя сессия
+  resource :session, only: %i[new create destroy]
+
+  # провести путь только для экшенов new и create
+  resources :users, only: %i[new create]
+
   # сделать корневой путь
   root to: 'questions#index'
 end
